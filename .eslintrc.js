@@ -17,7 +17,7 @@ module.exports = {
   },
   extends: ['eslint:recommended', 'google'],
   rules: {
-    // semi: 'off',
     'linebreak-style': 'off',
+    'semi': 'off',
   },
 };

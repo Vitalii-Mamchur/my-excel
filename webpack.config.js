@@ -60,9 +60,7 @@ module.exports = (env, argv) => {
       port: 3000,
       open: true,
       hot: true, // автоматически перезагружает страницу про изменении CSS
-      /*
-      watchContentBase: true, // CSS + HTML
-      */
+      // watchContentBase: true, // CSS + HTML
     },
     devtool: isDev ? 'source-map' : false,
     plugins: plugins(),
@@ -71,9 +69,6 @@ module.exports = (env, argv) => {
         {
           test: /\.s[ac]ss$/i,
           use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
-        },
-        {
-          'linebreak-style': 0,
         },
         {
           test: /\.m?js$/,
