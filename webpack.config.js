@@ -60,9 +60,7 @@ module.exports = (env, argv) => {
       port: 3000,
       open: true,
       hot: true, // автоматически перезагружает страницу про изменении CSS
-      /*
-      watchContentBase: true, // CSS + HTML
-      */
+      // watchContentBase: true, // CSS + HTML
     },
     devtool: isDev ? 'source-map' : false,
     plugins: plugins(),
