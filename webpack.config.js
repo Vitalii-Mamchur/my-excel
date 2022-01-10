@@ -73,9 +73,6 @@ module.exports = (env, argv) => {
           use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
         },
         {
-          'linebreak-style': 0,
-        },
-        {
           test: /\.m?js$/,
           exclude: /node_modules/,
           use: {
